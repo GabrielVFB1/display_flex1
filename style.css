@@ -1,0 +1,33 @@
+body{margin: 0px;
+display: flex;}
+
+#header {height: 100vh;
+width: 12%;
+position: sticky;
+top: 0;
+background-color: black;}
+
+#header a {color: white;
+text-decoration: none;
+font-family: "Quicksand", sans-serif;}
+
+#header ul {color: white;
+list-style: none;
+font-family: "Quicksand", sans-serif;}
+
+svg {width: 9px;
+  fill: #ffffff;}
+svg:hover { fill: #df0e62;}
+
+#principal { background-image: url(https://preview.colorlib.com/theme/elit/images/img_9.jpg.webp);
+    background-attachment: fixed;
+    background-size: cover;
+
+width: 90%;}
+
+.espaco {height: 100vh;}
+
+.espaco:nth-child(2){background-color: black;}
+
+#icons {display: flex;}
+
