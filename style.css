@@ -1,11 +1,15 @@
 body{margin: 0px;
 display: flex;}
 
+*{margin: 0;
+  padding: 0;}
+
 #header {height: 100vh;
 width: 12%;
 position: sticky;
 top: 0;
-background-color: black;}
+background-color: black;
+padding: 10px;}
 
 #header a {color: white;
 text-decoration: none;
@@ -13,25 +17,17 @@ font-family: "Quicksand", sans-serif;}
 
 #header ul {color: white;
 list-style: none;
-font-family: "Quicksand", sans-serif;}
+font-family: "Quicksand", sans-serif;
+padding: 0;}
 
-svg {width: 9px;
+#icons {width: 9px;
   fill: #ffffff;}
-svg:hover { fill: #df0e62;}
+#icons:hover { fill: #df0e62;}
 
 #principal { background-image: url(https://preview.colorlib.com/theme/elit/images/img_9.jpg.webp);
     background-attachment: fixed;
     background-size: cover;
 width: 90%;}
-
-.espaco_welcome{height: 100vh;
-color: white;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-}
 
 #wl {font-family: "Oswald", sans-serif;
 font-size: 55px;
@@ -48,8 +44,27 @@ padding: 15px 30px;
 text-decoration: none;
 font-family: "Quicksand", sans-serif;}
 
+.espaco_welcome{height: 100vh;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+
+.espaco {
+border: solid;
+overflow: hidden;
+position: relative;}
 
 .espaco:nth-child(2){background-color: black;}
+
+#imagems {
+  width: 33.1%;
+  height: 300px;
+  object-fit: cover;
+  transition: 0.1s;}
+  
+  #imagems:hover {filter: brightness(50%);}
 
 #icones {display: flex;
 justify-content: space-around;}
@@ -62,7 +77,8 @@ font-size: 7ch;
 margin-top: 75px;}
 
 #img {display: flex;
-  margin-left: 45%;}
+  margin-left: 45%;
+border-radius: 100px;}
 
   #lorem2 {color: white;
     margin-left: 30%;
@@ -75,7 +91,26 @@ color: white;}
 
 #principal2 {color: white;
   background-color: #1a1a1a;
-  font-family: "Oswald", sans-serif;}
+  font-family: "Oswald", sans-serif;
+justify-content: center;}
 
   #principal:nth-child(2){background-color: #1a1a1a;}
+
+  #bio {font-family: "Oswald", sans-serif;
+    font-size: 55px;
+  margin-left: 25%;}
+#bioimg {border-radius: 0.25rem;
+  margin-left: 25%;}
+
+#blog {color: white;
+  background-color: black;
+  font-family: "Oswald", sans-serif;}
+#blog:nth-child(2){background-color: black;}
+
+#contact {color: white;
+  background-color: #1a1a1a;
+  font-family: "Oswald", sans-serif;
+justify-content: center;}
+
+  #contact:nth-child(2){background-color: #1a1a1a;}
 
