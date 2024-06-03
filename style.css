@@ -44,7 +44,8 @@ body {
   background-attachment: fixed;
   background-size: cover;
   width: 90%;
- 
+  background-color: rgba(0, 0, 0, 0.4);
+ background-blend-mode: multiply;
 }
 
 #wl {
@@ -58,15 +59,72 @@ body {
   font-size: 20px;
 }
 
-#contato {
-  color: #ffffff;
-  background-color: #df0e62;
-  border-color: #df0e62;
+#contact-texto {margin-left: 500px;
+padding: 10px;}
+.forms-group {
+  padding: 20px;
+margin-left: 500px
+}
+
+.forms-row {
+  display: flex;
+  justify-content: space-between;
+  outline: none;
+}
+
+.forms {
+  margin-bottom: 20px;
+  outline: none;
+}
+
+
+
+.forms label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.forms input,
+.forms textarea {
+outline: none;
+ width: 200px;
+ color: white;
+ padding: 10px;
+  color: white;
+  background-color: #1a1a1a;
+border-color: white;
+border-right: 0;
+border-left: 0;
+border-top: 0;}
+
+textarea {
+  height: 150px;
+  outline: none;
+}
+
+#contato { color: white;
+  background-color:#df0e62;
+  border-color:#df0e62;
   border-radius: 30px;
   padding: 15px 30px;
   text-decoration: none;
-  font-family: "Quicksand", sans-serif;
-}
+  font-family: "Quicksand", sans-serif;}
+
+#send { color: white;
+  background-color:#df0e62;
+  border-color:#df0e62;
+  border-radius: 30px;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;}
+
+#last {margin-right: 675px;
+ }
+ #email {width: 426px;}
+ #subject {width: 426px;}
+ #message {width: 426px;}
 
 .espaco_welcome {
   height: 100vh;
@@ -139,9 +197,7 @@ body {
   justify-content: center;
 }
 
-#principal:nth-child(2) {
-  background-color: #1a1a1a;
-}
+
 
 #bio {padding-top: 50px;
   padding-bottom: 25px;
@@ -170,10 +226,15 @@ body {
   padding-bottom: 50px;
   margin-left: 413px;}
 
-#blog1 {object-fit: cover;
-  margin-left: 413px;}
 
-#blog2 {margin-left: 413px;}
+#blog2 {display: flex;
+flex-direction: row;
+margin-left: 413px;}
+
+#imagemsBlog {width: 250px;
+  height: 200px;
+  object-fit: cover;
+margin-right: 25px;}
 
 #frase_jed {
   margin-left: 413px;
@@ -190,70 +251,22 @@ body {
 
 #certos1 {padding-bottom: 50px;}
 
-#contact {color: white;
-  padding: 20px;
+#contact {
+  color: white;
   background-color: #1a1a1a;
   font-family: "Oswald", sans-serif;
-justify-content: center;
-}
+  justify-content: center;}
 
-  #contact:nth-child(2){background-color: #1a1a1a;}
+#contact:nth-child(2) {
+  background-color: #1a1a1a;}
 
+#contactT {padding-bottom: 50px;
+padding-top: 50px;
+margin-left: 413px;}
 
-  #contact-texto {margin-left: 500px}
-  .forms-group {
-padding: 20px;
-margin-left: 500px
-}
+#lista {margin-left: 413px;}
 
-.forms-row {
-    display: flex;
-    justify-content: space-between;
-    outline: none;
-}
+#nums {text-align: center;}
 
-.forms {
-    margin-bottom: 20px;
-    outline: none;
-}
-
-
-
-.forms label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
-    outline: none;
-}
-
-.forms input,
-.forms textarea {
-  outline: none;
-   width: 200px;
-   color: white;
-   padding: 10px;
-    color: white;
-    background-color: #1a1a1a;
-  border-color: white;
-border-right: 0;
-border-left: 0;
-border-top: 0;}
-
-textarea {
-    height: 150px;
-    outline: none;
-}
-
-#send { color: white;
-  background-color:#df0e62;
-  border-color:#df0e62;
-  border-radius: 30px;
-  padding: 15px 30px;
-  text-decoration: none;
-  font-family: "Quicksand", sans-serif;}
-
-  #last {margin-right: 600px;
-   }
-   #email {width: 426px;}
-   #subject {width: 426px;}
-   #message {width: 426px;}
+#numeros {text-decoration: none;
+color: #df0e62;}
